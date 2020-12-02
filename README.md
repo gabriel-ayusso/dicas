@@ -3,6 +3,6 @@ Reuni aqui várias dicas que venho aprendendo sobre várias linguagens/tecnologa
 
 ## Index
 
-* [.Net](./dotnet/readme.md)
+* .Net Core
     * [Swagger](./dotnet/swagger.md)
     * [Health Check](./dotnet/healthcheck.md)
