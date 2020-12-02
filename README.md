@@ -1,2 +1,6 @@
-# dicas
-Dicas que eu tenho descoberto durante minha jornada
+# Dicas do Gabriel
+Reuni aqui várias dicas que venho aprendendo sobre várias linguagens/tecnologais.
+
+## Index
+
+* [.Net](./dotnet/readme.md)
