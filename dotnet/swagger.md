@@ -9,13 +9,13 @@ dotnet add package Swashbuckle.AspNetCore
 ## Adicionando o middleware Swagger
 
 No topo do arquivo **Startup.cs**, inclua as dependências
-```c#
+```csharp
 using Microsoft.OpenApi.Models;
 
 ```
 
 No arquivo Startup.cs, adicione o seguinte comando no método **ConfigureServices**:
-```c#
+```csharp
 // Adicionando o serviço Swagger
 services.AddSwaggerGen(c =>
 {
@@ -24,7 +24,7 @@ services.AddSwaggerGen(c =>
 ```
 
 No método **Configure**, altere o trecho a seguir:
-```c#
+```csharp
 if (env.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
