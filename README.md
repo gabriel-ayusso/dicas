@@ -4,6 +4,6 @@ Reuni aqui várias dicas que venho aprendendo sobre várias linguagens/tecnologa
 ## Index
 
 * .Net Core
-    * [Ferramentas e Pacotes](./dotnet/tools.md)
+    * [Bibliotecas úteis](./dotnet/libraries.md)
     * [Swagger](./dotnet/swagger.md)
     * [Health Check](./dotnet/healthcheck.md)
