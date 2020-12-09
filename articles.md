@@ -1,5 +1,11 @@
 # Artigos interessantes
 
+## React Native Starter Kits Review for 2020
+[Leia mais](https://blog.bitsrc.io/react-native-starter-kits-review-for-2020-f683b3607a6e)
+I would like to talk about the recently integrated developer tool for React Native called Flipper. I become a huge fan of this tool and believe it will be a revolution in a way we debug our React Native applications.
+
+---
+
 ## Top 10 React Native Open Source Apps
 Today we are going to discuss the top 10 React Native Open Source apps which are very popular in the React Native ecosystem and which you should consider using in your next React Native project.
 
