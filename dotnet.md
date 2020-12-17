@@ -1,5 +1,12 @@
 # Dicas de .Net Core
 
+## Conteúdo
+
+* [.Net API com Swagger](#net-api-com-swagger)
+* [Bibliotecas](#bibliotecas-%C3%BAties)
+* [Health Check](#health-check)
+* [CLI - Command Line Interface](#dotnet-cli---comandos-%C3%BAteis)
+
 ## .Net API com Swagger
 
 Para adicionar o swagger em sua api, será necessário instalar o pacote [Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
@@ -72,7 +79,7 @@ Em geral, há dois tipos de checagens, a saber, o **health check**, e o **readin
 
 Primeiramente, vamos instalar o pacote necessário:
 ```shell
- Microsoft.Extensions.Diagnostics.HealthChecks
+ dotnet add package Microsoft.Extensions.Diagnostics.HealthChecks
 ```
 
 O pacote de Health Check da Microsoft já possui inúmeros *health checks* implementados para nós, no entanto, podemos implementar o nosso próprio health check, se for conveniente.
@@ -116,12 +123,7 @@ Para usar o Healh Check padrão, vamos adicionar no nosso método **Configure**:
 app.UseEndpoints(endpoints =>
 {
     // ...
-    //GAG - Incluído o método MapHealthChecks
-    endpoints.MapHealthChecks("/hc", new HealthCheckOptions
-    {
-        Predicate = _ => true,
-        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-    });
+    endpoints.MapHealthChecks("/hc");
     // ...
 });
 ```
@@ -154,7 +156,6 @@ Com isso está pronta nossa aplicação. Podemos executá-la e verificar o healt
 Para adicionar o exporter que pode ser consumido pelo Prometheus, primeiro vamos adicionar o pacote a seguir
 
 ```shell
-dotnet add package AspNetcore.HealthChecks.Publisher.Prometheus
 dotnet add package AspNetCore.HealthChecks.Prometheus.Metrics
 ```
 
@@ -270,4 +271,24 @@ Para listar as ferramentas disponíveis (NuGet)
 
 ```shell
 dotnet tool search entity
+```
+
+## .Net Com React JS
+
+Para trabalhar com React, e ter as últimas bibliotecas instaladas, fazer o seguinte:
+
+```shell
+npm upgrade react-scripts --latest
+```
+
+Atualizar a biblioteca de typescript
+
+```shell
+npm install typescript --latest --save-dev
+```
+
+Instalar os tipos do react
+
+```shell
+npm install @types/node @types/react @types/react-dom @types/react-router
 ```
