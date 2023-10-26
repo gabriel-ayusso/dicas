@@ -18,3 +18,5 @@
 13. Figma
 14. htop
 15. Chrome DevTools
+
+[REST API Naming Conventions and Best Practices](https://medium.com/@nadinCodeHat/rest-api-naming-conventions-and-best-practices-1c4e781eb6a5)
